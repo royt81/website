@@ -1,0 +1,249 @@
+
+/*
+
+body
+
+.card
+#playerIframe
+#background
+#container
+#sideBar
+.myPic
+.sideBarList
+.sideBarButton
+.sideBarButton:hover
+#myPic
+.aboutMe
+#content
+#myName
+#getInContact
+#playerContainer
+@media only screen and (max-width: 600px) 
+
+ */
+
+
+
+body{
+    margin: 0;
+}
+
+
+.card{
+
+    font-family: monospace;
+    font-size: 2rem;
+
+    background-color: rgb(243, 243, 243);
+    border: 5px solid;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#background{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('/images/BG07.jpg');
+    background-size:cover;
+    overflow: hidden;
+}
+
+#container{
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-template-areas: 
+    'side-bar content content content';
+    align-items: center;
+}
+
+#sideBar{
+
+    grid-area: side-bar;
+
+    width: 20vw;
+    height: 100%;
+    background-color: rgba(198, 198, 198, 0.737);
+
+    margin-left: 20px;
+    padding: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+
+}
+.myPic{
+    width: 80%;
+    border: 6px solid rgb(121, 121, 121);
+    border-radius: 20px;
+
+    box-shadow: 1px 5px 1rem;
+}
+
+.sideBarList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.sideBarButton{
+    width: 15vw;
+    height: 10vh;
+    background-color: rgba(87, 85, 81, 0.908);
+    color: rgb(16, 19, 8);
+    border: 5px solid;
+    border-radius: 20px;
+    font-size: 4vh;
+    margin: 5px;
+    font-family: 'Oswald', sans-serif;
+    font-weight:500;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+
+    box-shadow: 1vh 1vh 1rem rgb(55, 54, 54);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.711) 0px 18px 36px -18px inset;
+
+}
+.sideBarButton:hover{
+    background-color: rgb(197, 198, 195);
+    color: rgb(51, 47, 55);
+    transition: 1s;
+
+}
+
+#myPic{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content{
+
+    flex-direction: column;
+    justify-content: center;
+    grid-area: content;
+
+    border: 5px solid black;
+    border-radius: 5vh;
+    background-color: rgba(135, 135, 135, 0.832);
+
+    height: 90%;
+    width: 70vw;
+
+    padding: 10px;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 5vw;
+    color: rgb(26, 31, 3);
+    font-weight: 400;
+    
+    display: none;
+}
+
+#myName{
+    color: rgba(246, 233, 251, 0.721);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;    
+    font-size: 5vh;
+
+}
+
+#getInContact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 50vh;
+    font-size: 2vw;
+    color: beige;
+}
+
+
+
+#playerContainer{
+    width: auto;
+    height: max-content;
+    background-color: rgba(54, 3, 39, 0.772);
+    border: 5px solid black;
+    border-radius:25px;
+    overflow: hidden;
+    margin: 5vh
+}
+
+@media only screen and (max-width: 600px) {
+
+    #container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2vh;
+    }
+    #sideBar{
+        flex-direction: row;
+        width: 100vw;
+        height: 20vh;
+        border-left: 0px solid;
+        border-right: 0px solid;
+        border-bottom: 5px solid black;
+        border-top: 5px solid black;
+        margin-bottom: 1vh;
+    }
+    #myPic{
+        width: 20%;
+        height: auto;
+    }
+    .myPic{
+        border: 2px;
+    }
+    .sideBarList{
+        flex-direction: row;
+    }
+    .sideBarButton{
+        font-size: small;
+        font-weight: 600;
+        overflow: hidden;
+        border: 2px rgb(61, 61, 61);
+        margin-top: 5%;
+    }
+    .card{
+        font-size: 1rem;
+    }
+    #content{
+        font-size:6vh;
+    }
+    #playerIframe{
+        width: 80%;
+        height: 80%;
+    }
+
+    #myName{
+        font-size: 3vh;
+    }
+    #getInContact{
+        font-size: 2vh;
+    }
+   
+}
+
+@media only screen and (max-width: 800px){
+    #sideBar{
+        margin-right: 1vw;
+    }
+}
