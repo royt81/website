@@ -47,7 +47,7 @@ body{
 #background{
     height: 100vh;
     width: 100vw;
-    background-image: url('/images/BG07.jpg');
+    background-image: url('./images/BG07.jpg');
     background-size:cover;
     overflow: hidden;
 }
