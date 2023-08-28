@@ -7,6 +7,9 @@ const sideBarUl = document.getElementsByClassName('sideBarList')[0];
 const myPic = document.getElementById('myPic');
 const content = document.getElementById('content');
 const myName = document.getElementById('myName');
+const myPic = document.getElementById('myPic')
+
+myPic.style.backgroundImage = "url('./images/me.png')"
 
 myPic.addEventListener('click', ()=>{
     background.style.backgroundImage = "url('./images/BG06.jpg')"
