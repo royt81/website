@@ -13,6 +13,8 @@ img.className = 'myPic';
 img.src = "./images/me.png"
 // <alt="picture of roy tate"/>
 
+myPic.appendchild(img);
+
 myPic.style.backgroundImage = "url('./images/me.png')"
 
 myPic.addEventListener('click', ()=>{
