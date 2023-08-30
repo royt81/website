@@ -8,12 +8,11 @@ const myPic = document.getElementById('myPic');
 const content = document.getElementById('content');
 const myName = document.getElementById('myName');
 
-const img = document.creatElement('img');
-img.className = 'myPic'; 
-img.src = "./images/me.png"
-// <alt="picture of roy tate"/>
+const image = document.createElement('img');
+image.className = 'myPic'
+image.src = './images/me.png'
 
-myPic.appendchild(img);
+myPic.appendChild(image)
 
 myPic.style.backgroundImage = "url('./images/me.png')"
 
