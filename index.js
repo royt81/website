@@ -7,7 +7,6 @@ const sideBarUl = document.getElementsByClassName('sideBarList')[0];
 const myPic = document.getElementById('myPic');
 const content = document.getElementById('content');
 const myName = document.getElementById('myName');
-const myPic = document.getElementById('myPic');
 
 const img = document.creatElement('img');
 img.className = 'myPic'; 
