@@ -31,7 +31,7 @@ aboutMe.addEventListener('click', ()=>{
     content.innerText =  `
     a Berlin-based, 
     happily married, 
-    self-thought web designer 
+    self-taught web designer 
     and programmer.`
     content.className = 'aboutMe';
     content.style.display = 'flex';
