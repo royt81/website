@@ -14,8 +14,6 @@ image.src = './images/me.png'
 
 myPic.appendChild(image)
 
-myPic.style.backgroundImage = "url('./images/me.png')"
-
 myPic.addEventListener('click', ()=>{
     background.style.backgroundImage = "url('./images/BG06.jpg')"
     content.style.display = 'none'
